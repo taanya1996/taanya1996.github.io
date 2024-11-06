@@ -1,0 +1,39 @@
+---
+---
+@import "minima";
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: $spacing-unit;
+}
+
+.header-col {
+    float: left;
+    margin-top: $spacing-unit * 1.5;
+    padding-left: $spacing-unit * 0.5;
+}
+
+.header-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.header-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.header-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-palm) {
+    .header-col {
+      float: none;
+      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+      width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+  }
+  
